@@ -45,7 +45,10 @@ namespace SpeedType
         /// <see cref="double"/> (in seconds).</param>
         public GameResult(double wpm, int accuracy, double timeTaken)
         {
-            // ////////// => TO IMPLEMENT <= //////////// //
+            // ////////// => TO IMPLEMENT <= //////////// // -
+            WPM = wpm;
+            Accuracy = accuracy;
+            TimeTaken = timeTaken;
         }
     }
 }
