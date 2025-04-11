@@ -38,8 +38,12 @@ namespace SpeedType
 
             if (File.Exists(filePath))
             {
-                // ////////// => TO IMPLEMENT <= //////////// //   ????????????
-                sentences = new[] {filePath};
+                // ////////// => TO IMPLEMENT <= //////////// //-
+
+                // was not able to separate a single word from the whole phrase
+
+                //sentences = new[] {File.ReadAllText(filePath).Split('\n')};
+                sentences = new[] {File.ReadAllText(filePath)};
             }
             else
             {

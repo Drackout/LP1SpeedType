@@ -164,6 +164,7 @@ namespace SpeedType
                     // If it's null wont show anything
                     // so i put the "-" as nothing being shown
                     table.AddRow("-","-","-","-");
+                    break;
                 }
 
                 table.AddRow(i.ToString(),
