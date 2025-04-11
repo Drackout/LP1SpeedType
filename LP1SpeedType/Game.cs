@@ -33,6 +33,8 @@ namespace SpeedType
         {
             // ////////// => TO IMPLEMENT <= //////////// // -
             gameStats = new GameResult[5];
+            sentenceProvider = new SentenceProvider();
+            evaluator = new Evaluator();
         }
 
         /// <summary>
@@ -158,12 +160,10 @@ namespace SpeedType
             {
                 if (gameStats[i] == null)
                 {
-                    // ////////// => TO IMPLEMENT <= //////////// //
-                    table.AddRow(i.ToString(),
-                             gameStats[i].WPM.ToString(),
-                             gameStats[i].Accuracy.ToString(),
-                             gameStats[i].TimeTaken.ToString()
-                             );
+                    // ////////// => TO IMPLEMENT <= //////////// // -
+                    // If it's null wont show anything
+                    // so i put the "-" as nothing being shown
+                    table.AddRow("-","-","-","-");
                 }
 
                 table.AddRow(i.ToString(),
